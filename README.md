@@ -7,7 +7,7 @@ My configruation: Windows 10, QEMU version: 6.0.93
 
 Working:
  - startup
- - procnto-smp
+ - procnto-* 
  - serial driver (pl011)
  - shell
  
