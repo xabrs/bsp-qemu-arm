@@ -4,8 +4,11 @@ Minimal BSP for run QNX 6.5.0 on QEMU ARM System emulator.
 ## Description
 
 Tested cpu: cortex-a7, cortex-15 (32bit)
+
 QEMU version: 6.0.93
+
 So far I have only been able to run the procnto-smp and pl011 serail driver. I could not advance further. 
+
 Need:
  - pci-server
  - e1000 driver
