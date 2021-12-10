@@ -3,7 +3,7 @@ Minimal BSP for run QNX 6.5.0 on QEMU ARM System emulator.
 
 ## Description
 
-My configruation: QEMU version: 6.0.93, Windows 10
+My configruation: Windows 10, QEMU version: 6.0.93
 
 Working:
  - startup
