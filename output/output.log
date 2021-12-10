@@ -1,0 +1,136 @@
+U-Boot 2019.07 (Sep 10 2019 - 19:57:31 +0000)
+
+DRAM:  256 MiB
+WARNING: Caches not enabled
+Flash: 128 MiB
+*** Warning - bad CRC, using default environment
+
+In:    pl011@9000000
+Out:   pl011@9000000
+Err:   pl011@9000000
+Net:   No ethernet found.
+Hit any key to stop autoboot:  0
+starting USB...
+No working controllers found
+USB is stopped. Please issue 'usb start' first.
+scanning bus for devices...
+
+Device 0: unknown device
+
+Device 0: unknown device
+starting USB...
+No working controllers found
+No ethernet found.
+No ethernet found.
+=> virtio scan
+=> fatload virtio 0:1 0x40200000 bsp-qemu-virt.bin
+2598244 bytes read in 18 ms (137.7 MiB/s)
+=> go 0x40200000
+## Starting application at 0x40200000 ...
+CPUID=1093648625 ;
+> init_intrinfo:
+> init_cacheattr:
+> init_cpuinfo:
+CPUID=1093648625 ;
+CPU0: L1 Icache: 512x64
+CPU0: L1 Dcache: 512x64 WB
+CPU0: L2 Dcache: 36864x64 WB
+CPU0: VFP-d32 FPSID=410430f0
+CPU0: NEON MVFR0=10110222 MVFR1=11111111
+CPU0: 412fc0f1: Cortex A15 rev 1 500MHz
+init_hwinfo:Loading IFS...done
+elf_map: 1M va=fe000000 pa=40200000 sz=00100000
+elf_map: 1M va=fe000000 pa=40200000 sz=00100000
+Header size=0x0000009c, Total Size=0x00000600, #Cpu=1, Type=4
+Section:system_private offset:0x000001f0 size:0x00000068
+  syspage ptr user:fc404000 kernel:fc404000
+  cpupage ptr user:fc404978 kernel:fc404978 spacing:84
+  kdebug info:00000000 callback:00000000
+  boot pgms: idx=0
+    0) base paddr:40212000 start addr:fe043ee4
+  ramsize:00000000 pagesize:00001000
+Section:qtime offset:0x00000148 size:0x00000060
+  boot:00000000 CPS:00000000016e3600 rate/scale:83333333/-15 intr:1
+  flags:00000001 load:0 epoch:1970 rr_mul:0 adj count/inc:0/0
+Section:callout offset:0x000000a0 size:0x00000048
+  reboot:00000000 power:fc40481c
+  timer_load:fc40483c reload:fc404864 value:fc404880
+  0) display:fc404898 poll:fc4048bc break:fc4048e0
+  1) display:00000000 poll:00000000 break:00000000
+Section:cpuinfo offset:0x000001a8 size:0x00000020
+  0) cpu:412fc0f1 flags:c0000076 speed:000001f4 cache i/d:0/1 name:72
+Section:cacheattr offset:0x000005c0 size:0x00000040
+  0) flags:01 size:0040 #lines:0200 control:fc404608 next:255
+  1) flags:22 size:0040 #lines:0200 control:fc404668 next:255
+Section:meminfo offset:0x00000600 size:0x00000000
+Section:asinfo offset:0x00000360 size:0x00000220
+  0000) ffffffff00000000-0000ffff00000000 o:0010 a:0064 p:1075903904 c:00000000 n:21
+  0020) ffffffff00000000-0000000000000000 o:0010 a:0064 p:1075903904 c:00000000 n:28
+  0040) 48ffffff00000000-0000000000000000 o:0013 a:0064 p:1075903904 c:00000000 n:36
+  0060) 48ffffff00000000-0000004000000000 o:0013 a:0064 p:1075903904 c:00000000 n:44
+  0080) 47ffffff00000000-0000002000000000 o:0037 a:0064 p:1075903904 c:00000000 n:47
+  00a0) 48ffffff00000000-0000006000000000 o:0037 a:0064 p:1075903904 c:00000000 n:47
+  00c0) 4fffffff00000000-0000002000000000 o:0017 a:0064 p:1075903904 c:00000000 n:47
+  00e0) ffffffff00000000-0000ffff00000000 o:0010 a:0064 p:1075903904 c:00000000 n:21
+  0100) 47ffffff00000000-000000e000000000 o:0007 a:0064 p:1075903904 c:00000000 n:51
+  0120) 4047a56300000000-0000000000000000 o:0005 a:0064 p:1075903904 c:00000000 n:96
+  0140) 4021110f00000000-0000000000000000 o:0007 a:0064 p:1075903904 c:00000000 n:104
+  0160) 4047a56300000000-0000000000000000 o:0007 a:0064 p:1075903904 c:00000000 n:112
+  0180) 40007fff00000000-0000008000000000 o:0007 a:0064 p:1075903904 c:00000000 n:120
+  01a0) 4020000700000000-0000008000000000 o:0007 a:0064 p:1075903904 c:00000000 n:120
+  01c0) 47ffffff00000000-0000008000000000 o:0027 a:0064 p:1075903904 c:00000000 n:120
+  01e0) 48ffffff00000000-000000a000000000 o:0027 a:0064 p:1075903904 c:00000000 n:120
+  0200) 4fffffff00000000-000000c000000000 o:0007 a:0064 p:1075903904 c:00000000 n:120
+Section:hwinfo offset:0x000002f0 size:0x00000070
+  0) size:3 tag:3(Group) isize:3, iname:0(hw), owner:65535, kids:2
+  12) size:3 tag:17(Bus) isize:3, iname:9(unknown), owner:0, kids:1
+  24) size:3 tag:3(Group) isize:3, iname:56(rtc), owner:12, kids:1
+  36) size:4 tag:65(Device) isize:4, iname:60(NONE), owner:24, kids:0
+     00 00 00 00
+  52) size:3 tag:17(Bus) isize:9, iname:83(pci), owner:0, kids:0
+  64) size:6 tag:87(location)
+     00 00 ff 2e 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00
+Section:typed_strings offset:0x00000258 size:0x00000018
+  off:0 type:2 string:'localhost'
+Section:strings offset:0x00000270 size:0x00000080
+  [0]'hw' [3]'Group' [9]'unknown' [17]'Bus' [21]'memory' [28]'below4G'
+  [36]'L4-Ctrl' [44]'io' [47]'ram' [51]'1to1' [56]'rtc' [60]'NONE' [65]'Device'
+  [72]'Cortex A15' [83]'pci' [87]'location' [96]'imagefs' [104]'startup'
+  [112]'bootram' [120]'sysram'
+Section:intrinfo offset:0x00000580 size:0x00000040
+  0) vector_base:00000000, #vectors:160, cascade_vector:7fffffff
+     cpu_intr_base:00000000, cpu_intr_stride:0, flags:0000
+      id => flags:8000, size:005c, rtn:fc40470c
+     eoi => flags:9000, size:003c, rtn:fc404768
+     mask:fc4047a4, unmask:fc4047d8, config:fc40480c
+Section:smp offset:0x00000600 size:0x00000000
+Section:pminfo offset:0x00000600 size:0x00000000
+Section:mdriver offset:0x00000600 size:0x00000000
+Section:boxinfo offset:0x000001c8 size:0x00000028
+  hw_flags:00000000
+Section:cpu offset:0x00000128 size:0x00000020
+  page_flush:fc4046b8 page_flush_deferred:fc404708
+  upte_ro:00000e6e upte_rw:00000c7e
+  kpte_ro:0000065e kpte_rw:0000045e
+  mask_nc:000001cc
+  mmu_cr1:00c51870 set:00803c7f clr:00000000 -> 00c53c7f
+
+System page at phys:40010000 user:fc404000 kern:fc404000
+Starting next program at vfe043ee4
+cpu_startnext: cpu0 -> fe043ee4
+vstart: 1075845568
+flags:1VFPv3: fpsid=410430f0
+coproc_attach(10): replacing fe05ba84 with fe069374
+coproc_attach(11): replacing fe05ba84 with fe069374
+Welcome to QNX Neutrino 6.5.0 on the QEMU ARMv7 virt
+Serial opened...
+#
+# echo test
+test
+# ls /dev
+console    pipe       shmem      stdin      tty
+mem        sem        slog       stdout     tymem
+null       ser1       stderr     text       zero
+
+Process 6 (ls) exited status=0.
+#

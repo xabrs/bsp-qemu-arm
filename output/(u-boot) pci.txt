@@ -1,0 +1,7 @@
+=> pci
+Scanning PCI devices on bus 0
+BusDevFun  VendorId   DeviceId   Device Class       Sub-Class
+_____________________________________________________________
+00.00.00   0x1b36     0x0008     Bridge device           0x00
+00.01.00   0x1af4     0x1000     Network controller      0x00
+00.02.00   0x1af4     0x1001     Mass storage controller 0x00

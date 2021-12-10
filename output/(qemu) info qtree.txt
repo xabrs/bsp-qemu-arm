@@ -1,0 +1,456 @@
+  Bus  0, device   0, function 0:
+    Host bridge: PCI device 1b36:0008
+      PCI subsystem 1af4:1100
+      id ""
+  Bus  0, device   1, function 0:
+    Ethernet controller: PCI device 1af4:1000
+      PCI subsystem 1af4:0001
+      IRQ 0, pin A
+      BAR0: I/O at 0xffffffffffffffff [0x001e].
+      BAR1: 32 bit memory at 0xffffffffffffffff [0x00000ffe].
+      BAR4: 64 bit prefetchable memory at 0xffffffffffffffff [0x00003ffe].
+      BAR6: 32 bit memory at 0xffffffffffffffff [0x0003fffe].
+      id ""
+
+bus: main-system-bus
+  type System
+  dev: platform-bus-device, id "platform-bus-device"
+    gpio-out "sysbus-irq" 64
+    num_irqs = 64 (0x40)
+    mmio_size = 33554432 (0x2000000)
+    mmio ffffffffffffffff/0000000002000000
+  dev: fw_cfg_mem, id ""
+    data_width = 8 (0x8)
+    dma_enabled = true
+    x-file-slots = 32 (0x20)
+    acpi-mr-restore = true
+    mmio 0000000009020008/0000000000000002
+    mmio 0000000009020000/0000000000000008
+    mmio 0000000009020010/0000000000000008
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003e00/0000000000000200
+    bus: virtio-mmio-bus.31
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003c00/0000000000000200
+    bus: virtio-mmio-bus.30
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003a00/0000000000000200
+    bus: virtio-mmio-bus.29
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003800/0000000000000200
+    bus: virtio-mmio-bus.28
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003600/0000000000000200
+    bus: virtio-mmio-bus.27
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003400/0000000000000200
+    bus: virtio-mmio-bus.26
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003200/0000000000000200
+    bus: virtio-mmio-bus.25
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a003000/0000000000000200
+    bus: virtio-mmio-bus.24
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002e00/0000000000000200
+    bus: virtio-mmio-bus.23
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002c00/0000000000000200
+    bus: virtio-mmio-bus.22
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002a00/0000000000000200
+    bus: virtio-mmio-bus.21
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002800/0000000000000200
+    bus: virtio-mmio-bus.20
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002600/0000000000000200
+    bus: virtio-mmio-bus.19
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002400/0000000000000200
+    bus: virtio-mmio-bus.18
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002200/0000000000000200
+    bus: virtio-mmio-bus.17
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a002000/0000000000000200
+    bus: virtio-mmio-bus.16
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001e00/0000000000000200
+    bus: virtio-mmio-bus.15
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001c00/0000000000000200
+    bus: virtio-mmio-bus.14
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001a00/0000000000000200
+    bus: virtio-mmio-bus.13
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001800/0000000000000200
+    bus: virtio-mmio-bus.12
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001600/0000000000000200
+    bus: virtio-mmio-bus.11
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001400/0000000000000200
+    bus: virtio-mmio-bus.10
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001200/0000000000000200
+    bus: virtio-mmio-bus.9
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a001000/0000000000000200
+    bus: virtio-mmio-bus.8
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000e00/0000000000000200
+    bus: virtio-mmio-bus.7
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000c00/0000000000000200
+    bus: virtio-mmio-bus.6
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000a00/0000000000000200
+    bus: virtio-mmio-bus.5
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000800/0000000000000200
+    bus: virtio-mmio-bus.4
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000600/0000000000000200
+    bus: virtio-mmio-bus.3
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000400/0000000000000200
+    bus: virtio-mmio-bus.2
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000200/0000000000000200
+    bus: virtio-mmio-bus.1
+      type virtio-mmio-bus
+  dev: virtio-mmio, id ""
+    gpio-out "sysbus-irq" 1
+    format_transport_address = true
+    force-legacy = true
+    ioeventfd = false
+    mmio 000000000a000000/0000000000000200
+    bus: virtio-mmio-bus.0
+      type virtio-mmio-bus
+  dev: gpio-key, id ""
+    gpio-in "" 1
+    gpio-out "sysbus-irq" 1
+  dev: pl061, id ""
+    gpio-in "" 8
+    gpio-out "" 8
+    gpio-out "sysbus-irq" 1
+    pullups = 0 (0x0)
+    pulldowns = 255 (0xff)
+    mmio ffffffffffffffff/0000000000001000
+  dev: gpex-pcihost, id ""
+    gpio-out "sysbus-irq" 4
+    allow-unmapped-accesses = true
+    x-config-reg-migration-enabled = true
+    bypass-iommu = false
+    mmio ffffffffffffffff/0000000020000000
+    mmio ffffffffffffffff/ffffffffffffffff
+    mmio 000000003eff0000/0000000000010000
+    bus: pcie.0
+      type PCIE
+      dev: virtio-net-pci, id ""
+        disable-legacy = "off"
+        disable-modern = false
+        ioeventfd = true
+        vectors = 4 (0x4)
+        virtio-pci-bus-master-bug-migration = false
+        migrate-extra = true
+        modern-pio-notify = false
+        x-disable-pcie = false
+        page-per-vq = false
+        x-ignore-backend-features = false
+        ats = false
+        x-ats-page-aligned = true
+        x-pcie-deverr-init = true
+        x-pcie-lnkctl-init = true
+        x-pcie-pm-init = true
+        x-pcie-flr-init = true
+        aer = false
+        addr = 01.0
+        romfile = "efi-virtio.rom"
+        romsize = 262144 (0x40000)
+        rombar = 1 (0x1)
+        multifunction = false
+        x-pcie-lnksta-dllla = true
+        x-pcie-extcap-init = true
+        failover_pair_id = ""
+        acpi-index = 0 (0x0)
+        class Ethernet controller, addr 00:01.0, pci id 1af4:1000 (sub 1af4:0001)
+        bar 0: i/o at 0xffffffffffffffff [0x1e]
+        bar 1: mem at 0xffffffffffffffff [0xffe]
+        bar 4: mem at 0xffffffffffffffff [0x3ffe]
+        bar 6: mem at 0xffffffffffffffff [0x3fffe]
+        bus: virtio-bus
+          type virtio-pci-bus
+          dev: virtio-net-device, id ""
+            csum = true
+            guest_csum = true
+            gso = true
+            guest_tso4 = true
+            guest_tso6 = true
+            guest_ecn = true
+            guest_ufo = true
+            guest_announce = true
+            host_tso4 = true
+            host_tso6 = true
+            host_ecn = true
+            host_ufo = true
+            mrg_rxbuf = true
+            status = true
+            ctrl_vq = true
+            ctrl_rx = true
+            ctrl_vlan = true
+            ctrl_rx_extra = true
+            ctrl_mac_addr = true
+            ctrl_guest_offloads = true
+            mq = false
+            rss = false
+            hash = false
+            guest_rsc_ext = false
+            rsc_interval = 300000 (0x493e0)
+            mac = "52:54:00:12:34:56"
+            netdev = "hub0port0"
+            x-txtimer = 150000 (0x249f0)
+            x-txburst = 256 (0x100)
+            tx = ""
+            rx_queue_size = 256 (0x100)
+            tx_queue_size = 256 (0x100)
+            host_mtu = 0 (0x0)
+            x-mtu-bypass-backend = true
+            speed = -1 (0xffffffffffffffff)
+            duplex = ""
+            failover = false
+            indirect_desc = true
+            event_idx = true
+            notify_on_empty = true
+            any_layout = true
+            iommu_platform = false
+            packed = false
+            use-started = true
+            use-disabled-flag = true
+            x-disable-legacy-check = false
+      dev: gpex-root, id ""
+        addr = 00.0
+        romfile = ""
+        romsize = 4294967295 (0xffffffff)
+        rombar = 1 (0x1)
+        multifunction = false
+        x-pcie-lnksta-dllla = true
+        x-pcie-extcap-init = true
+        failover_pair_id = ""
+        acpi-index = 0 (0x0)
+        class Host bridge, addr 00:00.0, pci id 1b36:0008 (sub 1af4:1100)
+  dev: pl031, id ""
+    gpio-out "sysbus-irq" 1
+    migrate-tick-offset = true
+    mmio 0000000009010000/0000000000001000
+  dev: pl011, id ""
+    gpio-out "sysbus-irq" 6
+    clock-in "clk" freq_hz=0 Hz
+    chardev = "serial0"
+    migrate-clk = true
+    mmio ffffffffffffffff/0000000000001000
+  dev: arm-gicv2m, id ""
+    gpio-out "sysbus-irq" 64
+    base-spi = 48 (0x30)
+    num-spi = 64 (0x40)
+    mmio 0000000008020000/0000000000001000
+  dev: arm_gic, id ""
+    gpio-out "sysbus-irq" 4
+    gpio-in "" 288
+    num-cpu = 1 (0x1)
+    num-irq = 288 (0x120)
+    revision = 2 (0x2)
+    has-security-extensions = false
+    has-virtualization-extensions = false
+    num-priority-bits = 8 (0x8)
+    mmio 0000000008000000/0000000000001000
+    mmio 0000000008010000/0000000000002000
+    mmio ffffffffffffffff/0000000000000100
+  dev: cfi.pflash01, id ""
+    drive = ""
+    num-blocks = 256 (0x100)
+    sector-length = 262144 (0x40000)
+    width = 4 (0x4)
+    device-width = 2 (0x2)
+    max-device-width = 2 (0x2)
+    big-endian = false
+    secure = false
+    id0 = 137 (0x89)
+    id1 = 24 (0x18)
+    id2 = 0 (0x0)
+    id3 = 0 (0x0)
+    name = "virt.flash1"
+    old-multiple-chip-handling = false
+    mmio ffffffffffffffff/0000000004000000
+  dev: cfi.pflash01, id ""
+    drive = ""
+    num-blocks = 256 (0x100)
+    sector-length = 262144 (0x40000)
+    width = 4 (0x4)
+    device-width = 2 (0x2)
+    max-device-width = 2 (0x2)
+    big-endian = false
+    secure = false
+    id0 = 137 (0x89)
+    id1 = 24 (0x18)
+    id2 = 0 (0x0)
+    id3 = 0 (0x0)
+    name = "virt.flash0"
+    old-multiple-chip-handling = false
+    mmio ffffffffffffffff/0000000004000000
