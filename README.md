@@ -20,12 +20,12 @@ Need:
 
 ## How to start
 
-1. Start QEMU emulator:
+1. Download *images/u-boot.bin*, *images/bsp-qemu-virt.bin* to *images* folder
+2. Start QEMU emulator:
 ```sh
 qemu-system-arm.exe -M virt -m 256 -cpu cortex-a15 -bios ./images/u-boot.bin -hda fat:rw:./images -vga none -serial stdio
 ```
-
-2. Enter commands in U-Boot:
+3. Enter commands in U-Boot:
 ```sh
 virtio scan
 fatload virtio 0:1 0x40200000 bsp-qemu-virt.bin
