@@ -10,6 +10,7 @@ Working:
  - procnto-smp
  - serial driver (pl011)
  - shell
+ 
 Need:
  - pci-server
  - virtio driver
