@@ -17,6 +17,7 @@ Need:
  - network driver
  - etc
 
+Update: i managed to run sabrelite BSP (ARM). Network and USB-strorage (qemu virtual fat) working. It is not planned to develop this repository.
 
 ## How to start
 
