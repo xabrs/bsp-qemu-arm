@@ -2,7 +2,7 @@
 Minimal BSP for run QNX 6.5.0 on QEMU ARM System emulator.
 
 ## UPD: 
-I managed to run sabrelite BSP (ARM). Network and USB-strorage (qemu virtual fat) working. It is not planned to develop this repository.
+I managed to run sabrelite BSP (ARM) with network and USB-strorage (qemu virtual fat). It is not planned to develop this repository.
 
 ## Description
 
